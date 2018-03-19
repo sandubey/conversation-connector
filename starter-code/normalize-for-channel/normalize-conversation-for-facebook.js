@@ -53,6 +53,7 @@ function main(params) {
  * @return {JSON} - Either an attachment or a text message payload
  */
 function getMessageType(params) {
+	
   const interactiveMessage = params.conversation.output.facebook;
   const textMessage = params.conversation.output.text.join(' ');
   // If dialog node sends back output.facebook (used for interactive messages such as
