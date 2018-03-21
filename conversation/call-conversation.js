@@ -72,7 +72,6 @@ function main(params) {
     const payload = Object.assign({}, params.conversation);
     payload.workspace_id = auth.conversation.workspace_id;
 	
-	payload.output.facebook.message.text = "Hi Sandeep";
     conversation.message(payload, (err, response) => {
       if (err) {
         reject(err);
